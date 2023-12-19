@@ -34,6 +34,7 @@ function renderizarTabela(tarefas) {
                   <td>${tarefa.descricao}</td>
                   <td>
                     <button class="excluir-btn" tarefa-id=${tarefa.id}>Excluir</button>
+                    <button class="atualizar-btn" tarefa-atualizar-id=${tarefa.id}>Atualizar</button>
                   </td>
               </tr>
           `;
