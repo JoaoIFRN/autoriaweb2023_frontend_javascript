@@ -1,5 +1,3 @@
-import { Usuario } from "./Usuario.js";
-
 export class Tarefa {
   constructor(titulo, descricao) {
       this._titulo = titulo;

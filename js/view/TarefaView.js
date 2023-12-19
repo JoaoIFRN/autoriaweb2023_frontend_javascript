@@ -1,3 +1,7 @@
+/**
+ * Renderiza o formulário para criar uma nova tarefa.
+ * @return {string} HTML do formulário de criação de tarefa.
+ */
 function renderizarFormulario() {
   return `
           <form class="mt-3" id="formulario_tarefa">
@@ -14,6 +18,11 @@ function renderizarFormulario() {
       `;
 }
 
+/**
+ * Renderiza o formulário para atualizar uma tarefa existente.
+ * @param {Object} tarefa - A tarefa a ser atualizada.
+ * @return {string} HTML do formulário de atualização de tarefa.
+ */
 function renderizarFormularioAtualizar(tarefa) {
     return `
             <form class="mt-3" id="formulario_tarefa_atualizar">
@@ -29,8 +38,13 @@ function renderizarFormularioAtualizar(tarefa) {
                 <button type="submit" class="btn btn-primary mt-2">Salvar</button>
             </form>
         `;
-  }
+}
 
+  /**
+ * Renderiza a tabela de tarefas.
+ * @param {Array} tarefas - Lista de tarefas a serem exibidas.
+ * @return {string} HTML da tabela de tarefas.
+ */
 function renderizarTabela(tarefas) {
   let tabela = `
           <table class="table table-striped mt-3">
